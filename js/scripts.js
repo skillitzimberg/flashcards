@@ -8,6 +8,10 @@ $(function() {
     // PUTS
     $("#title").text($title);
     $("#definition").text($def)
+
+    // SETS INITIAL STATE
+    $("#title").removeClass("hide");
+    $("#definition").addClass("hide");
   });
 
   // TOGGLES
