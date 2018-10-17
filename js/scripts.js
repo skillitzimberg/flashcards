@@ -1,23 +1,13 @@
 $(function() {
+  $("li").click(function() {
+    // GETS
+    var $id = $(this).attr("id");
+    var $title = $("#" + $id).text();
+    var $def = $("#" + $title).text();
 
-  // $("h3").click(function() {
-  //   $(this).addClass(".hide");
-  //   $(this).siblings().addClass(".show");
-  // });
-
-  $("h3").click(function() {
-    $(this).slideToggle();
-    $(this).siblings().slideToggle();
+    // PUTS
+    $("#title").text($title);
+    $("#definition").text($def)
   });
-
-  $("p").click(function() {
-    $(this).slideToggle();
-    $(this).siblings().slideToggle();
-  });
-
-  // $(".clickable").click(function() {
-  //   $("#shown").slideToggle();
-  //   $("#hidden").slideToggle();
-  // });
 
 });
