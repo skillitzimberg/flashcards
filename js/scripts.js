@@ -9,6 +9,8 @@ $(function() {
     $("#title").text($title);
     $("#definition").text($def)
   });
+
+  // TOGGLES
   $("#title").click(function() {
     $("#title").addClass("hide");
     $("#definition").removeClass("hide");
